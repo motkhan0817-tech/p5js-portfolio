@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5.js 과제 포트폴리오</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .portfolio-container {
+            display: grid;
+            /* 2x2 그리드 레이아웃 설정 */
+            grid-template-columns: 1fr 1fr;
+            gap: 30px; /* 작품 간 간격 */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .assignment-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .assignment-box h2 {
+            margin-top: 0;
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        /* P5.js 작품을 임베드할 iframe 스타일 */
+        .sketch-frame {
+            width: 100%;
+            height: 400px; /* 적절한 높이 설정 (필요에 따라 조절) */
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+
+        /* 미디어 쿼리: 화면이 좁아지면 1열로 변경 */
+        @media (max-width: 768px) {
+            .portfolio-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✨ P5.js 과제 포트폴리오 (1, 4 / 2, 3 순서)</h1>
+
+    <div class="portfolio-container">
+        
+        <div class="assignment-box">
+            <h2>1. 과제 1</h2>
+            <iframe src="./assignment1/index.html" class="sketch-frame" title="과제 1 작품"></iframe>
+        </div>
+
+        <div class="assignment-box">
+            <h2>2. 과제 4</h2>
+            <iframe src="./assignment4/index.html" class="sketch-frame" title="과제 4 작품"></iframe>
+        </div>
+
+        <div class="assignment-box">
+            <h2>3. 과제 2</h2>
+            <iframe src="./assignment2/index.html" class="sketch-frame" title="과제 2 작품"></iframe>
+        </div>
+
+        <div class="assignment-box">
+            <h2>4. 과제 3</h2>
+            <iframe src="./assignment3/index.html" class="sketch-frame" title="과제 3 작품"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
